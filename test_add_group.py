@@ -25,7 +25,7 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("pass").send_keys(password)
         wd.find_element_by_css_selector("input[type=\"submit\"]").click()
 
-    def test_test_add_group(self):
+    def test_add_group(self):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
